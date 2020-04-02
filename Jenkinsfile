@@ -4,7 +4,7 @@ pipeline {
     stages {   
        stage ('BUILD') {
            steps {
-                sh "docker build -t image:1.0 ." 
+                sh "sudo docker build -t image:1.0 ." 
            }     
        }   
     }           
