@@ -1,11 +1,11 @@
 // Declarative Pipeline
 pipeline {
     agent any 
-    stages {   
-       stage ('BUILD') {
+    stages {  
+       stage ('Creating Container') {
            steps {
-                sh "docker build -t image:2.0 ." 
+                sh "run -itd --name="duvva" image:1.0 /bin/bash ." 
            }     
-       }   
+       }         
     }           
 }    
